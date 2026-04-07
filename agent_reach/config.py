@@ -24,6 +24,7 @@ class Config:
         "twitter_xreach": ["twitter_auth_token", "twitter_ct0"],  # legacy key name; used by bird CLI
         "groq_whisper": ["groq_api_key"],
         "github_token": ["github_token"],
+        "fxiaoke": ["fxiaoke_app_id", "fxiaoke_app_secret", "fxiaoke_permanent_code", "fxiaoke_user_id"],
     }
 
     def __init__(self, config_path: Optional[Path] = None):
