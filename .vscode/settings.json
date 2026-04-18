@@ -1,0 +1,33 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "touch": true,
+        "/^cd /Users/chen/Documents/GitHub/SalesAI/backend && python -c \"import main\" 2>&1 \\| head -20$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -c \"import json; json\\.load\\(open\\('/Users/chen/Documents/GitHub/SalesAI/frontend/package\\.json'\\)\\)\" && echo \"package\\.json valid\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python3 -c \"import json; json\\.load\\(open\\('/Users/chen/Documents/GitHub/SalesAI/frontend/package\\.json'\\)\\); print\\('package\\.json valid'\\)\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^which python3 && python3 --version && which node && node --version && which npm && npm --version$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "mkdir": true,
+        "pip": true,
+        "pytest": true,
+        "pip3": true,
+        "/^python3 -m pytest tests/ -v 2>&1 \\| tail -55$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python3 -m venv /tmp/ar_test && source /tmp/ar_test/bin/activate && pip install -e \"\\.\\[dev\\]\" -q 2>&1 \\| tail -5 && python -m pytest tests/ -v 2>&1 \\| tail -55$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
